@@ -53,7 +53,7 @@ int main(int argc, char* argv[]) {
 
     string args = getInitialInput(argc, argv);
     vector<NuageAbstrait*> points = creerPoints(args);
-    vector<NuageAbstrait*> nuages;
+    // vector<NuageAbstrait*> nuages;
     Executeur executeur;
     string cmd;
     // Menu
