@@ -1,6 +1,6 @@
 #include "PatronCommande/Executeur.h"
 #include "PatronCommande/CommandeAfficher.h"
-// #include "affichage.h"
+#include "affichage.h"
 #include <windows.h>
 #include <iostream>
 #include <sstream>
@@ -52,6 +52,8 @@ int main(int argc, char* argv[]) {
     
 
     string args = getInitialInput(argc, argv);
+    vector<NuageAbstrait*> points = creerPoints(args);
+    vector<NuageAbstrait*> nuages;
     Executeur executeur;
     string cmd;
     // Menu
